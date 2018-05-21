@@ -155,7 +155,7 @@ $ ./flamegraph.pl trace_blocky_profile > blocky_profile.svg
 
 As it is possible to see bellow, "request_processor" and "do_work" are consuming lots of CPU.
 
-![Flame Graph - Profile ](/img/blocky_profile.svg)
+![Flame Graph - Profile ](https://cdn.rawgit.com/Jeskz0rd/Off-CPU/82631068/img/blocky_profile.svg)
 
 Well, let's go deeper to identify the OFF-CPU. This step, "offcputime" tool will be used.
 
@@ -184,7 +184,7 @@ $ cd ~/performance/FlameGraph/
 $ ./flamegraph.pl trace_blocky_offcpu > blocky_offcpu.svg
 ```
 
-![Flame Graph - Off-CPU](/img/blocky_offcpu.svg)
+![Flame Graph - Off-CPU](https://cdn.rawgit.com/Jeskz0rd/Off-CPU/82631068/img/blocky_offcpu.svg)
 
 As it is possible to see, "backend_handler" calls nanosleep and "request_processor" calls "lock wait". 
 
